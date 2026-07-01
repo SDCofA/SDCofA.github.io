@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Country Risk Almanac — SDCofA</title>
+    <meta name="description" content="Static deterministic country risk reference pages from Strategic Data Company of Ankara.">
+    <link rel="icon" href="assets/bnti-icon.png">
+    <link rel="apple-touch-icon" href="assets/bnti-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="data/countries.js"></script>
+    <script defer src="almanac.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Strategic Data Company of Ankara home">
+        <img src="assets/logo.png" alt="Strategic Data Company of Ankara">
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#indices">Indices</a>
+        <a href="almanac.html">Almanac</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero almanac-hero">
+        <div class="hero-inner">
+          <img src="assets/logo-dark.png" alt="Strategic Data Company of Ankara" class="hero-logo">
+          <p class="eyebrow">No-AI publication surface</p>
+          <h1>Country Risk Almanac</h1>
+          <p class="hero-copy">
+            Country reference pages generated from structured data and templates. No AI-written judgments,
+            no black-box scores, and no unpublished methodology.
+          </p>
+        </div>
+      </section>
+
+      <section class="section almanac-index">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Country pages</p>
+            <h2>Baseline pages for global discovery.</h2>
+          </div>
+          <p>
+            Each page is intentionally modest until verified source pipelines are attached. The page exists to
+            establish the reference surface, not to fabricate a risk opinion.
+          </p>
+        </div>
+        <label class="search-box">
+          Search countries
+          <input id="country-search" type="search" placeholder="Type a country name or ISO code">
+        </label>
+        <div id="country-list" class="country-list" aria-live="polite"></div>
+      </section>
+    </main>
+  </body>
+</html>
