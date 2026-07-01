@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Access &amp; MCP - SDCofA</title>
+    <meta name="description" content="Agent-readable data access and MCP-ready catalogs from Strategic Data Company of Ankara.">
+    <link rel="icon" href="assets/bnti-icon.png">
+    <link rel="apple-touch-icon" href="assets/bnti-icon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Strategic Data Company of Ankara home">
+        <img src="assets/logo.png" alt="Strategic Data Company of Ankara">
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#indices">Indices</a>
+        <a href="almanac.html">Almanac</a>
+        <a href="mcp.html">MCP</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero almanac-hero">
+        <div class="hero-inner">
+          <img src="assets/logo-dark.png" alt="Strategic Data Company of Ankara" class="hero-logo">
+          <p class="eyebrow">Data access</p>
+          <h1>MCP-ready access for institutional reference data.</h1>
+          <p class="hero-copy">
+            SDCofA data surfaces are static, inspectable, and method-bound. The MCP layer describes what agents
+            may read today and what can become hosted data tools later.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="mcp-catalog.json">Open catalog JSON</a>
+            <a class="button" href="downloads/sdcofa-mcp-adapter.md" download>Download adapter notes</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section data-access">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Public data surfaces</p>
+            <h2>Reference first, score later.</h2>
+          </div>
+          <p>
+            These files and pages can be read by humans, crawlers, and agents without a backend. Future index
+            outputs should follow the same pattern: visible source boundaries and deterministic publication.
+          </p>
+        </div>
+        <div class="data-grid">
+          <article class="data-card">
+            <h2>Country Almanac Data</h2>
+            <p>Structured country records used by the public almanac.</p>
+            <p><code>data/countries.json</code></p>
+            <a class="button primary" href="data/countries.json">Open JSON</a>
+          </article>
+          <article class="data-card">
+            <h2>MCP Catalog</h2>
+            <p>A static catalog for agent-readable SDCofA data access products.</p>
+            <p><code>mcp-catalog.json</code></p>
+            <a class="button primary" href="mcp-catalog.json">Open catalog</a>
+          </article>
+          <article class="data-card">
+            <h2>Weekly Letter Template</h2>
+            <p>A non-AI briefing structure for future subscriber products.</p>
+            <p><code>downloads/weekly-letter-template.md</code></p>
+            <a class="button primary" href="downloads/weekly-letter-template.md" download>Download</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section mcp-seal-note">
+        <div>
+          <p class="eyebrow">Guardrails</p>
+          <h2>No black-box intelligence surface.</h2>
+          <p>
+            Agents may retrieve references, templates, and published data files. They should not invent scores,
+            fabricate country judgments, or imply unpublished methodology.
+          </p>
+        </div>
+        <ul>
+          <li>Country pages are baseline references.</li>
+          <li>Index outputs require source-backed methodology.</li>
+          <li>Published JSON is authoritative for static data access.</li>
+          <li>Human-edited analysis remains separate from machine-readable records.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

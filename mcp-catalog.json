@@ -1,0 +1,28 @@
+{
+  "name": "Strategic Data Company of Ankara Data Access Catalog",
+  "publisher": "Strategic Data Company of Ankara",
+  "site": "https://sdcofa.github.io/",
+  "status": "static-catalog",
+  "contact": "monarchcastleholdings@gmail.com",
+  "data_surfaces": [
+    {
+      "id": "sdcofa.country_almanac",
+      "title": "Country Risk Almanac",
+      "stage": "published-static-reference",
+      "page": "https://sdcofa.github.io/almanac.html",
+      "json": "https://sdcofa.github.io/data/countries.json"
+    },
+    {
+      "id": "sdcofa.weekly_letter_template",
+      "title": "Weekly Letter Template",
+      "stage": "downloadable-template",
+      "download": "https://sdcofa.github.io/downloads/weekly-letter-template.md"
+    },
+    {
+      "id": "sdcofa.index_scores_future",
+      "title": "BNTI, WTI, and MENA score outputs",
+      "stage": "future-source-backed-data",
+      "constraint": "No scores without visible methodology and source appendix."
+    }
+  ]
+}

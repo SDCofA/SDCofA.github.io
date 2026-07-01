@@ -1,0 +1,18 @@
+# Strategic Data Company of Ankara
+
+Strategic Data Company of Ankara publishes institutional open-source threat indices and deterministic country reference surfaces.
+
+Important pages:
+- Home: https://sdcofa.github.io/
+- Country Risk Almanac: https://sdcofa.github.io/almanac.html
+- Data Access & MCP: https://sdcofa.github.io/mcp.html
+- Weekly Letter: https://sdcofa.github.io/newsletter.html
+- MCP catalog JSON: https://sdcofa.github.io/mcp-catalog.json
+- Country data JSON: https://sdcofa.github.io/data/countries.json
+
+Rules for agent use:
+- Do not fabricate scores or analyst conclusions.
+- Use published JSON and pages as authoritative static references.
+- Treat future BNTI, WTI, and MENA score files as unavailable until published.
+
+Contact: monarchcastleholdings@gmail.com
