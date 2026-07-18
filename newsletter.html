@@ -3,43 +3,66 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Weekly Letter — SDCofA</title>
-    <meta name="description" content="SDCofA weekly deterministic risk letter.">
+    <title>Weekly Letter | SDCofA</title>
+    <meta name="description" content="The SDCofA weekly letter format separates observed changes, current assessment, and forecast uncertainty.">
     <link rel="icon" href="assets/bnti-icon.png">
     <link rel="apple-touch-icon" href="assets/bnti-icon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Strategic Data Company of Ankara home">
-        <img src="assets/logo.png" alt="Strategic Data Company of Ankara">
+      <a class="brand" href="index.html" aria-label="SDCofA home">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
+          <img src="assets/logo.png" alt="Strategic Data Company of Ankara">
+        </picture>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="index.html#indices">Indices</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#standards">Standards</a>
         <a href="almanac.html">Almanac</a>
-        <a href="mcp.html">MCP</a>
-        <a href="newsletter.html">Newsletter</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="mcp.html">Data access</a>
+        <a href="newsletter.html" aria-current="page">Weekly letter</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero almanac-hero">
-        <div class="hero-inner">
-          <img src="assets/logo-dark.png" alt="Strategic Data Company of Ankara" class="hero-logo">
-          <p class="eyebrow">Weekly letter</p>
-          <h1>Deterministic risk notes, not AI-written analysis.</h1>
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="reading-width">
+          <p class="eyebrow">Weekly analytical format</p>
+          <h1>A source-traceable letter, not an automated opinion.</h1>
           <p class="hero-copy">
-            The weekly letter is designed for source-traceable score changes, category tables, and a human-edited
-            executive note. A mailing provider can be connected later without changing the site structure.
+            The template gives observed changes, a human-edited assessment, and any
+            forecast a separate section. Forecast horizon, uncertainty, method,
+            evidence, assumptions, and limitations must remain visible.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="mailto:monarchcastleholdings@gmail.com?subject=Subscribe%20to%20SDCofA%20Weekly">Request subscription</a>
-            <a class="button" href="downloads/weekly-letter-template.md" download>Download sample template</a>
-            <a class="button" href="mcp.html">Data catalog</a>
+            <a class="button primary" href="downloads/weekly-letter-template.md" download>Download template</a>
+            <a class="button" href="mailto:monarchcastleholdings@gmail.com?subject=Subscribe%20to%20SDCofA%20Weekly">Request subscription</a>
           </div>
         </div>
       </section>
+
+      <section class="section reading-section" aria-labelledby="letter-standard-title">
+        <p class="eyebrow">Editorial boundary</p>
+        <h2 id="letter-standard-title">What every issue must disclose.</h2>
+        <ul class="disclosure-list">
+          <li><strong>Observation:</strong> source date, collection window, and measured change.</li>
+          <li><strong>Assessment:</strong> the editor's current interpretation and known gaps.</li>
+          <li><strong>Forecast:</strong> horizon, uncertainty, assumptions, method, evidence, and limitations.</li>
+          <li><strong>Freshness:</strong> the latest accepted product run, including any deferred publication.</li>
+        </ul>
+        <p>
+          A mailing provider may be connected later without changing this public
+          route or weakening the editorial contract.
+        </p>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <p><strong>SDCofA</strong> · Endorsed analytical unit of Monarch Castle Technologies</p>
+      <p><a href="mcp.html">Data catalog</a> · <a href="index.html#contact">Contact</a></p>
+    </footer>
   </body>
 </html>

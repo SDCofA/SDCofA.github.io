@@ -3,156 +3,197 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Strategic Data Company of Ankara</title>
-    <meta name="description" content="Strategic Data Company of Ankara publishes institutional open-source threat indices for a contested world.">
-    <meta property="og:title" content="Strategic Data Company of Ankara">
-    <meta property="og:description" content="An intelligence house of indices for a contested world.">
+    <title>SDCofA | Transparent geopolitical intelligence</title>
+    <meta name="description" content="SDCofA is the endorsed analytical unit of Monarch Castle Technologies, publishing transparent geopolitical observations, assessments, and time-bounded forecasts.">
+    <meta property="og:title" content="SDCofA | Transparent geopolitical intelligence">
+    <meta property="og:description" content="An endorsed analytical unit with editorial independence and traceable public methods.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:url" content="https://sdcofa.github.io/">
+    <meta property="og:image" content="https://sdcofa.github.io/docs/social-preview.png">
     <link rel="icon" href="assets/bnti-icon.png">
     <link rel="apple-touch-icon" href="assets/bnti-icon.png">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="portal.js"></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Strategic Data Company of Ankara home">
+      <a class="brand" href="index.html" aria-label="SDCofA home">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
           <img src="assets/logo.png" alt="Strategic Data Company of Ankara">
         </picture>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="#indices">Indices</a>
+        <a href="#products">Products</a>
+        <a href="#standards">Standards</a>
         <a href="almanac.html">Almanac</a>
-        <a href="mcp.html">MCP</a>
-        <a href="#method">Method</a>
-        <a href="#governance">Governance</a>
-        <a href="#contact">Contact</a>
+        <a href="mcp.html">Data access</a>
+        <a href="newsletter.html">Weekly letter</a>
       </nav>
     </header>
 
-    <main id="top">
+    <main id="main-content">
       <section class="hero">
-        <div class="seal-array" aria-hidden="true">
-          <img src="assets/bnti-icon.png" alt="">
-          <img src="assets/wti-icon.png" alt="">
-          <img src="assets/mena-icon.png" alt="">
-        </div>
         <div class="hero-inner">
-          <img src="assets/logo-dark.png" alt="Strategic Data Company of Ankara" class="hero-logo">
-          <p class="eyebrow">Ankara, Turkiye</p>
-          <h1>An intelligence house of indices for a contested world.</h1>
+          <p class="eyebrow">Endorsed analytical unit · Ankara, Türkiye</p>
+          <h1>Decision intelligence with its evidence left visible.</h1>
           <p class="hero-copy">
-            Strategic Data Company of Ankara publishes standing open-source threat assessments
-            with traceable inputs, fixed scoring doctrine, and scheduled refresh cycles.
+            SDCofA is an endorsed analytical unit of Monarch Castle Technologies.
+            Our assessments are editorially independent: product methods, evidence
+            boundaries, and analytical conclusions remain under SDCofA control.
+          </p>
+          <p class="hero-note">
+            We separate dated observations, current assessments, and time-bounded
+            forecasts so readers can see what was measured, what was interpreted,
+            and what remains uncertain.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#indices">View the indices</a>
-            <a class="button" href="almanac.html">Country almanac</a>
-            <a class="button" href="mcp.html">Data access</a>
-            <a class="button" href="https://monarchcastleholdings.github.io/">Monarch Castle Holdings</a>
+            <a class="button primary" href="#products">Review public products</a>
+            <a class="button" href="almanac.html">Open country almanac</a>
+            <a class="button" href="mcp.html">Inspect data catalog</a>
           </div>
         </div>
       </section>
 
-      <section id="indices" class="section indices">
+      <section id="products" class="section products" aria-labelledby="products-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">The Indices</p>
-            <h2>Standing instruments, refreshed by doctrine.</h2>
+            <p class="eyebrow">Public analytical products</p>
+            <h2 id="products-title">Three instruments, each with a visible trust boundary.</h2>
           </div>
           <p>
-            Each index is designed as a public institutional reading: a consistent collection boundary,
-            a stable category taxonomy, and a published score surface that analysts can inspect.
+            Lifecycle, coverage, cadence, provenance, ownership, and forecast-evidence
+            status come from a checked local registry. If that registry drifts or an
+            approved asset fails, the portal shows no partial product data.
           </p>
         </div>
-
-        <div class="index-grid">
-          <article class="index-card">
-            <img src="assets/bnti-logo.png" alt="BNTI - Border-Neighbor Threat Index" class="index-logo">
-            <h3>Border-Neighbor Threat Index</h3>
-            <p>Continuous threat posture across Turkiye's bordering states.</p>
-            <a href="https://github.com/SDCofA/border-neighbor-threat-index">Repository</a>
-          </article>
-          <article class="index-card">
-            <img src="assets/wti-logo.png" alt="WTI - World Threat Index" class="index-logo">
-            <h3>World Threat Index</h3>
-            <p>Comparable geopolitical pressure readings across 195 countries and 13 blocs.</p>
-            <a href="https://github.com/SDCofA/world-threat-index">Repository</a>
-          </article>
-          <article class="index-card">
-            <img src="assets/mena-logo.png" alt="MENA - MENA Threat Index" class="index-logo">
-            <h3>MENA Threat Index</h3>
-            <p>Regional risk assessment for the Middle East and North Africa.</p>
-            <a href="https://github.com/SDCofA/mena-threat-index">Repository</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="method" class="section method">
-        <p class="eyebrow">Method</p>
-        <h2>Open-source collection, fixed arithmetic, defensible publication.</h2>
-        <div class="method-list">
-          <article>
-            <span>01</span>
-            <h3>Collect</h3>
-            <p>Ingest lawful public reporting and preserve source, time, geography, and subject context.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Classify</h3>
-            <p>Map each item into published categories so readings can be compared across cycles.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Score</h3>
-            <p>Apply deterministic weights after classification. The model classifies; the arithmetic remains stable.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Publish</h3>
-            <p>Refresh the public assessment on schedule with visible provenance and consistent language.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="governance" class="section governance">
-        <div>
-          <p class="eyebrow">Institutional posture</p>
-          <h2>Classical in voice, modern in pipeline.</h2>
-        </div>
-        <p>
-          The SDCofA identity is deliberately separate from the modern technology language of the wider group:
-          engraved navy, antique gold, letter-spaced titling, and a sober publication standard.
+        <p id="product-status" class="registry-status" role="status">
+          Loading published product registry…
         </p>
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+        <noscript>
+          <p class="registry-status" role="alert">
+            Product cards require JavaScript so the portal can validate every trust
+            field before publication. The country almanac and data catalog remain
+            available without JavaScript.
+          </p>
+        </noscript>
       </section>
 
-      <section class="section almanac-promo">
-        <div>
-          <p class="eyebrow">Country risk almanac</p>
-          <h2>Static country pages without AI-written judgments.</h2>
+      <section id="standards" class="section standards" aria-labelledby="standards-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Editorial standard</p>
+            <h2 id="standards-title">Name the record before drawing a conclusion.</h2>
+          </div>
           <p>
-            The almanac is a deterministic publication surface: country reference pages, method notes,
-            and future score tables generated from data files and templates rather than model-written prose.
+            The label travels with the claim. Source dates and methods stay close
+            enough to the statement for a reader to verify its boundary.
           </p>
         </div>
-        <div class="almanac-actions">
-          <a class="button primary" href="almanac.html">Open almanac</a>
-          <a class="button" href="mcp.html">MCP/data catalog</a>
-          <a class="button" href="newsletter.html">Weekly letter</a>
+        <div class="record-grid">
+          <article>
+            <p class="record-type">Observation</p>
+            <h3>A dated measurement or source fact.</h3>
+            <p>
+              Observations preserve source, collection time, geography, and the
+              transformation applied. They do not become ground truth merely
+              because a pipeline recorded them.
+            </p>
+          </article>
+          <article>
+            <p class="record-type">Assessment</p>
+            <h3>A current interpretation of available evidence.</h3>
+            <p>
+              Assessments explain analytical judgment, known gaps, and the date at
+              which the interpretation was formed. They are not forecasts.
+            </p>
+          </article>
+          <article>
+            <p class="record-type">Forecast</p>
+            <h3>A future estimate with a horizon and uncertainty.</h3>
+            <p>
+              Forecasts state their cadence or horizon, method and evidence,
+              assumptions, uncertainty, and limitations. They are estimates—not
+              facts, guarantees, or claims of predictive performance.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section id="contact" class="section contact">
-        <div>
-          <p class="eyebrow">A Monarch Castle company</p>
-          <h2>Strategic Data Company of Ankara</h2>
+      <section id="method" class="section method" aria-labelledby="method-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Publication discipline</p>
+            <h2 id="method-title">Traceable inputs, declared arithmetic, gated release.</h2>
+          </div>
+          <p>
+            Each product owns its detailed methodology. The common portal standard
+            is intentionally narrow and auditable.
+          </p>
         </div>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:monarchcastleholdings@gmail.com">Contact</a>
+        <ol class="method-list">
+          <li>
+            <span aria-hidden="true">01</span>
+            <h3>Collect</h3>
+            <p>Use lawful public sources and retain source and time context.</p>
+          </li>
+          <li>
+            <span aria-hidden="true">02</span>
+            <h3>Classify</h3>
+            <p>Map records to the product's published categories and scope.</p>
+          </li>
+          <li>
+            <span aria-hidden="true">03</span>
+            <h3>Assess</h3>
+            <p>Apply the declared method without hiding model or data boundaries.</p>
+          </li>
+          <li>
+            <span aria-hidden="true">04</span>
+            <h3>Publish or withhold</h3>
+            <p>Release only after freshness, coverage, and schema gates pass.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section access-panel" aria-labelledby="access-title">
+        <div>
+          <p class="eyebrow">Reference and access</p>
+          <h2 id="access-title">Use the public surface without inventing what is absent.</h2>
+          <p>
+            The country almanac supplies deterministic reference pages. The catalog
+            identifies current machine-readable files and explicitly marks future
+            score outputs as unavailable until methodology and provenance are visible.
+          </p>
+        </div>
+        <div class="stacked-actions">
+          <a class="button primary" href="almanac.html">Country almanac</a>
+          <a class="button" href="mcp.html">MCP and data catalog</a>
+          <a class="button" href="newsletter.html">Weekly letter format</a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Ownership and endorsement</p>
+          <h2 id="contact-title">SDCofA owns the analysis. Monarch Castle Technologies endorses the unit.</h2>
+          <p>
+            Editorial independence protects analytical judgment; endorsement
+            establishes the visible portfolio relationship. Neither substitutes
+            for product evidence.
+          </p>
+        </div>
+        <div class="stacked-actions">
+          <a class="button primary" href="mailto:monarchcastleholdings@gmail.com">Contact SDCofA</a>
           <a class="button" href="https://monarchcastletech.github.io/">Monarch Castle Technologies</a>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p><strong>SDCofA</strong> · Endorsed analytical unit of Monarch Castle Technologies</p>
+      <p>Public-source analysis · Methods and limitations remain product-specific</p>
+    </footer>
   </body>
 </html>

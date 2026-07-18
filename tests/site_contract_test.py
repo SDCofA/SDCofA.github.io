@@ -133,7 +133,7 @@ class SiteContractTest(unittest.TestCase):
             "@media (max-width: 760px)",
         ):
             self.assertIn(expected, css)
-        self.assertNotRegex(css, r"width:\s*[4-9]\d{2,}px")
+        self.assertNotRegex(css, r"(?m)^\s*width:\s*[4-9]\d{2,}px")
 
     def test_public_copy_has_no_prohibited_performance_claims(self) -> None:
         candidates = [

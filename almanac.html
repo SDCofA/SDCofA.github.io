@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Country Risk Almanac — SDCofA</title>
-    <meta name="description" content="Static deterministic country risk reference pages from Strategic Data Company of Ankara.">
+    <title>Country Risk Almanac | SDCofA</title>
+    <meta name="description" content="Deterministic country reference pages from SDCofA, the endorsed analytical unit of Monarch Castle Technologies.">
     <link rel="icon" href="assets/bnti-icon.png">
     <link rel="apple-touch-icon" href="assets/bnti-icon.png">
     <link rel="stylesheet" href="styles.css">
@@ -12,53 +12,70 @@
     <script defer src="almanac.js"></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Strategic Data Company of Ankara home">
-        <img src="assets/logo.png" alt="Strategic Data Company of Ankara">
+      <a class="brand" href="index.html" aria-label="SDCofA home">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
+          <img src="assets/logo.png" alt="Strategic Data Company of Ankara">
+        </picture>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="index.html#indices">Indices</a>
-        <a href="almanac.html">Almanac</a>
-        <a href="mcp.html">MCP</a>
-        <a href="newsletter.html">Newsletter</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#standards">Standards</a>
+        <a href="almanac.html" aria-current="page">Almanac</a>
+        <a href="mcp.html">Data access</a>
+        <a href="newsletter.html">Weekly letter</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero almanac-hero">
-        <div class="hero-inner">
-          <img src="assets/logo-dark.png" alt="Strategic Data Company of Ankara" class="hero-logo">
-          <p class="eyebrow">No-AI publication surface</p>
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="reading-width">
+          <p class="eyebrow">Deterministic reference surface</p>
           <h1>Country Risk Almanac</h1>
           <p class="hero-copy">
-            Country reference pages generated from structured data and templates. No AI-written judgments,
-            no black-box scores, and no unpublished methodology.
+            Country pages are generated from structured records and templates.
+            They establish a stable reference surface without fabricating an
+            assessment, forecast, or unpublished score.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#country-search">Search countries</a>
-            <a class="button" href="mcp.html">Data access</a>
+            <a class="button" href="mcp.html">Inspect source data</a>
           </div>
         </div>
       </section>
 
-      <section class="section almanac-index">
+      <section class="section almanac-index" aria-labelledby="country-index-title">
         <div class="section-heading">
           <div>
             <p class="eyebrow">Country pages</p>
-            <h2>Baseline pages for global discovery.</h2>
+            <h2 id="country-index-title">Find a country by name or ISO code.</h2>
           </div>
           <p>
-            Each page is intentionally modest until verified source pipelines are attached. The page exists to
-            establish the reference surface, not to fabricate a risk opinion.
+            Each result keeps the public <code>country/&lt;slug&gt;.html</code>
+            deep link. Reference facts remain distinct from future analytical
+            interpretation.
           </p>
         </div>
-        <label class="search-box">
+        <label class="search-box" for="country-search">
           Search countries
-          <input id="country-search" type="search" placeholder="Type a country name or ISO code">
         </label>
+        <input
+          id="country-search"
+          class="search-input"
+          type="search"
+          inputmode="search"
+          autocomplete="off"
+          placeholder="Type a country name or ISO code"
+        >
         <div id="country-list" class="country-list" aria-live="polite"></div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p><strong>SDCofA</strong> · Endorsed analytical unit of Monarch Castle Technologies</p>
+      <p><a href="data/countries.json">Country JSON</a> · <a href="index.html#contact">Contact</a></p>
+    </footer>
   </body>
 </html>
