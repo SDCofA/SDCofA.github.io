@@ -3,35 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Data Access &amp; MCP - SDCofA</title>
-    <meta name="description" content="Agent-readable data access and MCP-ready catalogs from Strategic Data Company of Ankara.">
+    <title>Data Access and MCP | SDCofA</title>
+    <meta name="description" content="Inspect SDCofA's static catalog, country data, and MCP adapter notes.">
     <link rel="icon" href="assets/bnti-icon.png">
     <link rel="apple-touch-icon" href="assets/bnti-icon.png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Strategic Data Company of Ankara home">
-        <img src="assets/logo.png" alt="Strategic Data Company of Ankara">
+      <a class="brand" href="index.html" aria-label="SDCofA home">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
+          <img src="assets/logo.png" alt="Strategic Data Company of Ankara">
+        </picture>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="index.html#indices">Indices</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#standards">Standards</a>
         <a href="almanac.html">Almanac</a>
-        <a href="mcp.html">MCP</a>
-        <a href="newsletter.html">Newsletter</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="mcp.html" aria-current="page">Data access</a>
+        <a href="newsletter.html">Weekly letter</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero almanac-hero">
-        <div class="hero-inner">
-          <img src="assets/logo-dark.png" alt="Strategic Data Company of Ankara" class="hero-logo">
-          <p class="eyebrow">Data access</p>
-          <h1>MCP-ready access for institutional reference data.</h1>
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="reading-width">
+          <p class="eyebrow">Machine-readable access</p>
+          <h1>Inspect the catalog before using the data.</h1>
           <p class="hero-copy">
-            SDCofA data surfaces are static, inspectable, and method-bound. The MCP layer describes what agents
-            may read today and what can become hosted data tools later.
+            SDCofA data surfaces are static, inspectable, and method-bound. The
+            catalog states what is published today and what remains unavailable.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="mcp-catalog.json">Open catalog JSON</a>
@@ -40,55 +43,64 @@
         </div>
       </section>
 
-      <section class="section data-access">
+      <section class="section data-access" aria-labelledby="data-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Public data surfaces</p>
-            <h2>Reference first, score later.</h2>
+            <p class="eyebrow">Published surfaces</p>
+            <h2 id="data-title">Reference first. Analytical scores only with evidence.</h2>
           </div>
           <p>
-            These files and pages can be read by humans, crawlers, and agents without a backend. Future index
-            outputs should follow the same pattern: visible source boundaries and deterministic publication.
+            Humans and agents can read these files without a backend. A catalog
+            entry does not authorize an agent to invent missing scores, forecasts,
+            or country judgments.
           </p>
         </div>
         <div class="data-grid">
           <article class="data-card">
-            <h2>Country Almanac Data</h2>
-            <p>Structured country records used by the public almanac.</p>
+            <p class="record-type">Structured reference</p>
+            <h3>Country almanac data</h3>
+            <p>Country names, ISO codes, regions, and stable public-page slugs.</p>
             <p><code>data/countries.json</code></p>
-            <a class="button primary" href="data/countries.json">Open JSON</a>
+            <a class="text-link" href="data/countries.json">Open country JSON</a>
           </article>
           <article class="data-card">
-            <h2>MCP Catalog</h2>
-            <p>A static catalog for agent-readable SDCofA data access products.</p>
+            <p class="record-type">Access contract</p>
+            <h3>MCP catalog</h3>
+            <p>Known data surfaces, publication stage, and availability constraints.</p>
             <p><code>mcp-catalog.json</code></p>
-            <a class="button primary" href="mcp-catalog.json">Open catalog</a>
+            <a class="text-link" href="mcp-catalog.json">Open catalog</a>
           </article>
           <article class="data-card">
-            <h2>Weekly Letter Template</h2>
-            <p>A non-AI briefing structure for future subscriber products.</p>
+            <p class="record-type">Editorial template</p>
+            <h3>Weekly letter</h3>
+            <p>A structure that keeps source changes and human interpretation distinct.</p>
             <p><code>downloads/weekly-letter-template.md</code></p>
-            <a class="button primary" href="downloads/weekly-letter-template.md" download>Download</a>
+            <a class="text-link" href="downloads/weekly-letter-template.md" download>Download template</a>
           </article>
         </div>
       </section>
 
-      <section class="section mcp-seal-note">
+      <section class="section guardrails" aria-labelledby="guardrails-title">
         <div>
           <p class="eyebrow">Guardrails</p>
-          <h2>No black-box intelligence surface.</h2>
+          <h2 id="guardrails-title">Fail closed when evidence is absent.</h2>
           <p>
-            Agents may retrieve references, templates, and published data files. They should not invent scores,
-            fabricate country judgments, or imply unpublished methodology.
+            The catalog keeps future index outputs explicitly constrained. A
+            machine-readable path is not evidence that a score or forecast exists.
           </p>
         </div>
         <ul>
-          <li>Country pages are baseline references.</li>
-          <li>Index outputs require source-backed methodology.</li>
-          <li>Published JSON is authoritative for static data access.</li>
-          <li>Human-edited analysis remains separate from machine-readable records.</li>
+          <li>Country pages are baseline references, not assessments.</li>
+          <li>Index outputs require visible methodology and provenance.</li>
+          <li>Published JSON is authoritative for the static catalog.</li>
+          <li>Human-edited analysis remains distinct from source records.</li>
         </ul>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p><strong>SDCofA</strong> · Endorsed analytical unit of Monarch Castle Technologies</p>
+      <p><a href="almanac.html">Country almanac</a> · <a href="index.html#contact">Contact</a></p>
+    </footer>
   </body>
 </html>
