@@ -112,6 +112,7 @@ const source = fs.readFileSync("portal.js", "utf8");
 const registry = JSON.parse(fs.readFileSync("data/products.json", "utf8"));
 const sandbox = {
   console,
+  URL,
   document: { getElementById: () => null },
   fetch: async () => { throw new Error("not called"); },
 };

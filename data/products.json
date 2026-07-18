@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "products": [
+    {
+      "id": "border-neighbor-threat-index",
+      "name": "Border Neighbor Threat Index",
+      "canonicalUrl": "https://sdcofa.github.io/border-neighbor-threat-index/",
+      "logo": "assets/bnti-logo.png",
+      "lifecycle": "review-required",
+      "coverage": "Türkiye's seven border states",
+      "methodologyUrl": "https://github.com/SDCofA/border-neighbor-threat-index/blob/main/README.md",
+      "updateFrequency": "every 2 hours",
+      "freshness": "Scheduled two-hour publication; coverage gates may retain the last accepted snapshot.",
+      "provenance": "Open RSS and Atom reporting; each retained signal carries its source URL, publication time, country attribution, and threat category.",
+      "owner": "SDCofA",
+      "endorsement": "Part of Monarch Castle Technologies",
+      "forecastEvidenceStatus": "review-required",
+      "forecastLimitations": "Trend and forecast views are not approved as evidence of predictive performance. Treat outputs as time-bound analytical estimates, not facts or guarantees."
+    },
+    {
+      "id": "mena-threat-index",
+      "name": "MENA Threat Index",
+      "canonicalUrl": "https://sdcofa.github.io/mena-threat-index/",
+      "logo": "assets/mena-logo.png",
+      "lifecycle": "production",
+      "coverage": "24 Middle East and North Africa states",
+      "methodologyUrl": "https://github.com/SDCofA/mena-threat-index/blob/main/README.md",
+      "updateFrequency": "every 2 hours",
+      "freshness": "Scheduled two-hour publication; source, schema, and coverage gates may defer a run.",
+      "provenance": "Curated multilingual feeds plus a Google News layer; source, collection time, weighting, and append-only country and composite histories are retained.",
+      "owner": "SDCofA",
+      "endorsement": "Part of Monarch Castle Technologies",
+      "forecastEvidenceStatus": "documented-in-repository-metadata",
+      "forecastLimitations": "The 24-hour path uses declared predictive intervals and remains uncertain. Uneven coverage, categorization noise, and short histories limit interpretation."
+    },
+    {
+      "id": "world-threat-index",
+      "name": "World Threat Index",
+      "canonicalUrl": "https://sdcofa.github.io/world-threat-index/",
+      "logo": "assets/wti-logo.png",
+      "lifecycle": "production",
+      "coverage": "195 UN member states plus Taiwan, and 13 geopolitical blocs",
+      "methodologyUrl": "https://github.com/SDCofA/world-threat-index/blob/main/docs/wti-methodology.md",
+      "updateFrequency": "every few hours",
+      "freshness": "Tiered reassessment targets roughly 2, 6, or 12 hours; publication gates may retain the prior snapshot.",
+      "provenance": "Open news RSS by country with optional GDELT enrichment; published records retain source context and deterministic category-weight scoring.",
+      "owner": "SDCofA",
+      "endorsement": "Part of Monarch Castle Technologies",
+      "forecastEvidenceStatus": "review-required",
+      "forecastLimitations": "No forecast-performance evidence is approved. Scores describe observed reporting pressure and current assessment; they do not guarantee future conditions."
+    }
+  ]
+}
