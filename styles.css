@@ -360,7 +360,7 @@ nav a[aria-current="page"] {
 
 .trust-list dt {
   padding-right: 0.75rem;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   font-family: var(--mono);
   font-size: 0.72rem;
   letter-spacing: 0.05em;

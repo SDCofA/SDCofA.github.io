@@ -135,6 +135,10 @@ class SiteContractTest(unittest.TestCase):
             self.assertIn(expected, css)
         self.assertNotRegex(css, r"(?m)^\s*width:\s*[4-9]\d{2,}px")
 
+    def test_required_reading_does_not_use_the_sub_aa_muted_token(self) -> None:
+        css = (ROOT / "styles.css").read_text(encoding="utf-8")
+        self.assertNotIn("color: var(--text-muted)", css)
+
     def test_public_copy_has_no_prohibited_performance_claims(self) -> None:
         candidates = [
             *[ROOT / page for page in PUBLIC_PAGES],
