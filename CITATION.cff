@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use Strategic Data Company of Ankara Website, cite the exact repository commit and relevant data snapshot."
+title: "Strategic Data Company of Ankara Website"
+type: software
+authors:
+  - name: "Strategic Data Company of Ankara"
+repository-code: "https://github.com/SDCofA/SDCofA.github.io"
+license: "MIT"
