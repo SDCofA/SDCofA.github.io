@@ -30,7 +30,9 @@ The preview is maintained as a repository asset; the live interface or generated
 
 ## Data and methodology
 
-See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the implementation files in this repository. Source dates, transformation steps, and known gaps must travel with analytical outputs.
+- [mcp-catalog.json](mcp-catalog.json)
+
+These repository-specific sources define the methodology or provenance boundary. Source dates, transformation steps, and known gaps must travel with analytical outputs.
 
 ## Update frequency
 
@@ -42,21 +44,13 @@ Release-driven; rebuilt when approved unit or portfolio content changes.
 python -m http.server 8080
 ```
 
-```shell
-node --test tests/repository-hygiene.test.mjs
-```
-
 Run only in a trusted development environment and review repository-specific prerequisites before using networked or hardware features.
 
 ## Architecture
 
-- `almanac.html` — repository entry point or configuration.
-- `almanac.js` — repository entry point or configuration.
-- `assets/` — implementation or data module.
-- `country/` — implementation or data module.
-- `data/` — implementation or data module.
-- `downloads/` — implementation or data module.
-- `index.html` — repository entry point or configuration.
+- `assets/` — repository-specific implementation, data, or configuration boundary.
+- `country/` — repository-specific implementation, data, or configuration boundary.
+- `data/` — repository-specific implementation, data, or configuration boundary.
 
 ## Tests
 
