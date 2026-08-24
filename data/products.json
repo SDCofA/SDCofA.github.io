@@ -43,7 +43,7 @@
       "methodologyUrl": "https://github.com/SDCofA/world-threat-index/blob/main/docs/wti-methodology.md",
       "updateFrequency": "every few hours",
       "freshness": "Tiered reassessment targets roughly 2, 6, or 12 hours; publication gates may retain the prior snapshot.",
-      "provenance": "Open news RSS by country with optional GDELT enrichment; published records retain source context and deterministic category-weight scoring.",
+      "provenance": "Open news RSS by country with optional Google News RSS enrichment; published records retain source context and deterministic category-weight scoring.",
       "owner": "SDCofA",
       "endorsement": "Part of Monarch Castle Technologies",
       "forecastEvidenceStatus": "review-required",
